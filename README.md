@@ -14,8 +14,8 @@ the organization profile. The files at this repository root provide sensible
 defaults for future Chymeral repositories when they do not define a more
 specific policy themselves.
 
-The local checkout is intentionally named `chymeral-github` so it is easy to
-find in a file browser. Its GitHub remote must be named exactly `.github`:
+The local checkout name is not significant. The GitHub repository name must be
+exactly `.github`:
 
 ```text
 https://github.com/Chymeral/.github
@@ -33,13 +33,15 @@ https://github.com/Chymeral/.github
 | `SECURITY.md` | Default security-reporting policy for future repositories. |
 | `SUPPORT.md` | Routes for support, bug reports, and feature proposals. |
 
-## Publishing
+## Maintenance
 
-1. Create a **public** repository named `.github` under the `Chymeral`
-   organization without adding GitHub-generated starter files.
-2. Add that repository as the remote of this checkout.
-3. Push its `main` branch.
-4. In the organization settings, pin `chymeral` and `chymeral-rust-sdk` as
+This repository is public at <https://github.com/Chymeral/.github>. Keep its
+profile and shared defaults aligned with the released Chymeral ecosystem.
+
+1. Keep `profile/README.md` focused on the organization, ecosystem map, stable
+   versions, and canonical entry points.
+2. Keep repository-specific technical guidance in the repository that owns it.
+3. In the organization settings, pin `chymeral` and `chymeral-rust-sdk` as
    featured repositories.
 
 Repository-specific documentation and policies take precedence over these

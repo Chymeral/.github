@@ -25,6 +25,14 @@ The Rust SDK is available on [crates.io](https://crates.io/crates/chymeral-rust-
 with generated API documentation on
 [docs.rs](https://docs.rs/chymeral-rust-sdk/1.0.0/chymeral_rust_sdk/).
 
+## Downloads
+
+The [latest Chymeral release](https://github.com/Chymeral/chymeral/releases/latest)
+provides portable Linux x86_64 and Windows x86_64 editions. Extract the matching
+archive and launch `Launch Chymeral.sh` on Linux or `Launch Chymeral.cmd` on
+Windows; no installation is required. The Linux launcher explicitly selects X11,
+so a Wayland desktop needs Xwayland and `DISPLAY` available.
+
 ## Design
 
 - One window, two complementary surfaces: a PTY-backed ANSI/VT terminal grid
