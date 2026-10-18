@@ -1,0 +1,57 @@
+name: Feature proposal
+description: Propose a focused, justified improvement to a Chymeral project.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature proposals are most useful when they describe a concrete use case,
+        the problem to solve, and the trade-offs. Protocol proposals must remain
+        language-neutral.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Chymeral terminal and runtime
+        - Chymeral Link Protocol (CLP)
+        - Chymeral Rust SDK
+        - Documentation or organization
+        - Future language SDK
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain who needs this and what cannot be done adequately today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the externally visible behavior, not only a preferred implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include workarounds, designs, or existing features you considered.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and platform impact
+      description: State any effect on CLP, SDKs, Linux, Windows, or existing clients.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and documentation before proposing this feature.
+          required: true
+        - label: I understand that CLP behavior must be representable by clients in every supported language.
+          required: true

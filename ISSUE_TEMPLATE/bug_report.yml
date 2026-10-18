@@ -1,0 +1,80 @@
+name: Bug report
+description: Report reproducible unexpected behavior in a Chymeral project.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include credentials, private
+        tokens, or security-sensitive details. Security reports belong in the
+        repository security policy, not in a public issue.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      description: Select the repository or contract area that owns the behavior.
+      options:
+        - Chymeral terminal and runtime
+        - Chymeral Link Protocol (CLP)
+        - Chymeral Rust SDK
+        - Documentation
+        - Other or unknown
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Include the application, SDK, or protocol version you tested.
+      placeholder: "Chymeral 1.0.0 / CLP 2.0 / SDK 1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux (X11)
+        - Linux (Wayland or Xwayland)
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reliable sequence that demonstrates the problem.
+      placeholder: |
+        1. Start ...
+        2. Run ...
+        3. Interact with ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or output
+      description: Remove private paths, tokens, and unrelated personal data.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and documentation before opening this report.
+          required: true
+        - label: This is not a security vulnerability disclosure.
+          required: true

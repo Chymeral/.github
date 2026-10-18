@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Chymeral documentation
+    url: https://github.com/Chymeral/chymeral/blob/main/Main_Manual.md
+    about: Read the terminal, runtime, and CLP manual before opening a support issue.
+  - name: Rust SDK documentation
+    url: https://docs.rs/chymeral-rust-sdk/1.0.0/chymeral_rust_sdk/
+    about: Read the published Rust SDK API documentation.
+  - name: Report a security issue
+    url: https://github.com/Chymeral/chymeral/security/policy
+    about: Do not disclose vulnerabilities through public issues.
