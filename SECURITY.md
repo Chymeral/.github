@@ -21,3 +21,4 @@ For the currently published projects, use their repository-specific policies:
 
 - [Chymeral security policy](https://github.com/Chymeral/chymeral/blob/main/SECURITY.md)
 - [Chymeral Rust SDK security policy](https://github.com/Chymeral/chymeral-rust-sdk/blob/main/SECURITY.md)
+- [Chymeral Node SDK security policy](https://github.com/Chymeral/chymeral-node-sdk/blob/main/SECURITY.md)

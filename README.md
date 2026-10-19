@@ -41,8 +41,8 @@ profile and shared defaults aligned with the released Chymeral ecosystem.
 1. Keep `profile/README.md` focused on the organization, ecosystem map, stable
    versions, and canonical entry points.
 2. Keep repository-specific technical guidance in the repository that owns it.
-3. In the organization settings, pin `chymeral` and `chymeral-rust-sdk` as
-   featured repositories.
+3. In the organization settings, pin `chymeral`, `chymeral-rust-sdk`, and
+   `chymeral-node-sdk` as featured repositories.
 
 Repository-specific documentation and policies take precedence over these
 defaults. Do not place application releases, SDK packages, source code, or

@@ -20,10 +20,14 @@ runtime events from the Chymeral window that launched it.
 | --- | --- | --- |
 | [Chymeral](https://github.com/Chymeral/chymeral) | Terminal application, local graphics runtime, and CLP host. | `1.0.0` |
 | [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.0.0` |
+| [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.0.0` |
 
 The Rust SDK is available on [crates.io](https://crates.io/crates/chymeral-rust-sdk)
 with generated API documentation on
 [docs.rs](https://docs.rs/chymeral-rust-sdk/1.0.0/chymeral_rust_sdk/).
+The Node SDK is available from npm as
+[`@chymeral/node-sdk`](https://www.npmjs.com/package/@chymeral/node-sdk) for
+Node.js 22 or newer.
 
 ## Downloads
 
@@ -39,8 +43,9 @@ so a Wayland desktop needs Xwayland and `DISPLAY` available.
   and an opt-in retained 2D scene.
 - CLP is local, private to each Chymeral window, and neutral between programming
   languages.
-- SDKs are client libraries, not host-loaded plugins. Rust has no privileged
-  path; future language bindings share the same protocol contract.
+- SDKs are client libraries, not host-loaded plugins. Neither the Rust SDK nor
+  the Node SDK has a privileged path; additional language bindings share the
+  same protocol contract.
 - The runtime targets Linux and Windows. macOS is intentionally outside the
   current scope.
 - Chymeral is not a widget toolkit, mod system, global graphics service, or a
@@ -53,6 +58,8 @@ so a Wayland desktop needs Xwayland and `DISPLAY` available.
   to build, configure, and run the terminal.
 - Read the [Rust SDK README](https://github.com/Chymeral/chymeral-rust-sdk#readme)
   to build a CLP client in Rust.
+- Read the [Node SDK README](https://github.com/Chymeral/chymeral-node-sdk#readme)
+  to build a CLP client in Node.js or TypeScript.
 - Read the [CLP concepts in the Main Manual](https://github.com/Chymeral/chymeral/blob/main/Main_Manual.md)
   before implementing a client in another language.
 

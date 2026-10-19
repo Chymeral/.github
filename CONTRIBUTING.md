@@ -11,6 +11,8 @@ platforms, protocol compatibility, and release processes.
   [`chymeral`](https://github.com/Chymeral/chymeral).
 - Report Rust client-library and Rust conformance issues in
   [`chymeral-rust-sdk`](https://github.com/Chymeral/chymeral-rust-sdk).
+- Report Node.js or TypeScript client-library and Node conformance issues in
+  [`chymeral-node-sdk`](https://github.com/Chymeral/chymeral-node-sdk).
 - Propose language-neutral CLP contract changes in the core repository before
   implementing them in any SDK.
 
