@@ -36,10 +36,10 @@ https://github.com/Chymeral/.github
 ## Maintenance
 
 This repository is public at <https://github.com/Chymeral/.github>. Keep its
-profile and shared defaults aligned with the released Chymeral ecosystem.
+profile and shared defaults aligned with the current Chymeral ecosystem.
 
-1. Keep `profile/README.md` focused on the organization, ecosystem map, stable
-   versions, and canonical entry points.
+1. Keep `profile/README.md` focused on the organization, ecosystem map,
+   current version status, and canonical entry points.
 2. Keep repository-specific technical guidance in the repository that owns it.
 3. In the organization settings, pin `chymeral`, `chymeral-rust-sdk`, and
    `chymeral-node-sdk` as featured repositories.

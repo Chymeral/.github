@@ -16,21 +16,22 @@ runtime events from the Chymeral window that launched it.
 
 ## Ecosystem
 
-| Project | Purpose | Current stable line |
+| Project | Purpose | Current line |
 | --- | --- | --- |
-| [Chymeral](https://github.com/Chymeral/chymeral) | Terminal application, local graphics runtime, and CLP host. | `1.5.0` |
-| [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.5.0` |
-| [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.5.0` |
+| [Chymeral](https://github.com/Chymeral/chymeral) | Terminal application, local graphics runtime, and CLP host. | `1.7.0` |
+| [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.7.0` |
+| [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.7.0` |
 
-The current release family implements **CLP v2.1**, including frame-paced scene
-presentation and session-owned application window metadata. A v2.1 host and
-SDK client retain explicit compatibility with a CLP v2.0 host or client; the
-two v2.1-only capabilities are simply not granted on that fallback path.
+The current release family implements **CLP v2.4**. It includes frame-paced
+scene presentation, session-owned application window metadata, and reliable
+atomic `scene_batch` revisions. A v2.4 host accepts v2.0 and v2.1 clients
+without granting later capabilities; SDKs negotiate their granted capability
+set rather than assuming version-matched features.
 
 The Rust SDK is available on [crates.io](https://crates.io/crates/chymeral-rust-sdk)
 with generated API documentation on
-[docs.rs](https://docs.rs/chymeral-rust-sdk/1.5.0/chymeral_rust_sdk/).
-The Node SDK is available from npm as
+[docs.rs](https://docs.rs/chymeral-rust-sdk/latest/chymeral_rust_sdk/). The Node SDK
+is available from npm as
 [`@chymeral/node-sdk`](https://www.npmjs.com/package/@chymeral/node-sdk) for
 Node.js 22 or newer.
 
