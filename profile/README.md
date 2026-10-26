@@ -18,11 +18,11 @@ runtime events from the Chymeral window that launched it.
 
 | Project | Purpose | Current line |
 | --- | --- | --- |
-| [Chymeral](https://github.com/Chymeral/chymeral) | Terminal application, local graphics runtime, and CLP host. | `1.7.0` |
-| [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.7.0` |
-| [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.7.0` |
+| [Chymeral](https://github.com/Chymeral/chymeral) | Terminal application, local graphics runtime, and CLP host. | `1.7.1` |
+| [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.7.1` |
+| [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.7.1` |
 
-The current release family is **Chymeral `1.7.0` / CLP `v2.4`**. It combines a
+The current release family is **Chymeral `1.7.1` / CLP `v2.4`**. It combines a
 PTY-backed terminal with a retained 2D scene: rectangles, RGBA8 and animated
 GIF images, intrinsic text, hierarchy, clipping, deterministic stacking,
 alpha-aware interaction, focus, drag/drop, passthrough layers, overlap, and
