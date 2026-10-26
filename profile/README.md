@@ -22,11 +22,15 @@ runtime events from the Chymeral window that launched it.
 | [Chymeral Rust SDK](https://github.com/Chymeral/chymeral-rust-sdk) | Reference Rust client library for the language-neutral CLP contract. | `1.7.0` |
 | [Chymeral Node SDK](https://github.com/Chymeral/chymeral-node-sdk) | Node.js and TypeScript client library for the language-neutral CLP contract. | `1.7.0` |
 
-The current release family implements **CLP v2.4**. It includes frame-paced
-scene presentation, session-owned application window metadata, and reliable
-atomic `scene_batch` revisions. A v2.4 host accepts v2.0 and v2.1 clients
-without granting later capabilities; SDKs negotiate their granted capability
-set rather than assuming version-matched features.
+The current release family is **Chymeral `1.7.0` / CLP `v2.4`**. It combines a
+PTY-backed terminal with a retained 2D scene: rectangles, RGBA8 and animated
+GIF images, intrinsic text, hierarchy, clipping, deterministic stacking,
+alpha-aware interaction, focus, drag/drop, passthrough layers, overlap, and
+incoming desktop-file drops where the backend supports them. CLP v2.4 also
+includes frame-paced scene presentation, session-owned application window
+metadata, and reliable atomic `scene_batch` revisions. The host accepts
+compatible earlier clients but grants only the capability set each session
+negotiates; SDKs never assume version-matched features.
 
 The Rust SDK is available on [crates.io](https://crates.io/crates/chymeral-rust-sdk)
 with generated API documentation on

@@ -6,7 +6,7 @@
   start with the [Chymeral Main Manual](https://github.com/Chymeral/chymeral/blob/main/Main_Manual.md).
 - For Rust client development, start with the
   [Chymeral Rust SDK README](https://github.com/Chymeral/chymeral-rust-sdk#readme)
-  and its [API documentation](https://docs.rs/chymeral-rust-sdk/1.0.0/chymeral_rust_sdk/).
+  and its [API documentation](https://docs.rs/chymeral-rust-sdk/latest/chymeral_rust_sdk/).
 - For Node.js or TypeScript client development, start with the
   [Chymeral Node SDK README](https://github.com/Chymeral/chymeral-node-sdk#readme)
   and its [npm package](https://www.npmjs.com/package/@chymeral/node-sdk).
